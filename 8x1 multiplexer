@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main (){
+	
+	int s2, s1, s0;
+	string output;
+  string check="truepart";
+  
+	cout <<"Enter select line S2: \n";
+	cin >>s2;
+	cout <<"Enter select line S1: \n ";
+	cin >>s1;
+	cout <<"Enter select line S0: \n";
+	cin >>s0;
+	cout <<"\n-------------------------------"<<endl;
+	
+	
+	
+		(s2==0 && s1==0 && s0==0) ? output = "I0": (s2==0 && s1==0 && s0==1)? output= "I1":
+		(s2==0 && s1==1 && s0==0) ? output = "I2": (s2==0 && s1==1 && s0==1)? output= "I3":
+		(s2==1 && s1==0 && s0==0) ? output = "I4": (s2==1 && s1==0 && s0==1)? output= "I5":
+    (s2==1 && s1==1 && s0==0) ? output = "I6": (s2==1 && s1==1 && s0==1)? output= "I7": check="falsepart";
+    
+		cout <<"The output is = "<<output;
+	  cout <<"\n";
+	
+  	return
+    }
+
